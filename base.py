@@ -35,7 +35,7 @@ class heart:
 	def pulse(self):
 		self._grid[:,0] = 10
 
-	def tester(self,x,y):
+	def exciteCell(self,x,y):
 		self._grid[x,y] = 10
 
 	def ablate(self, a, b, r):
@@ -179,6 +179,6 @@ class image():
 """
 Get a rotor when used:
 a = base.heart(100,200)
-a.tester(50,0)
+a.exciteCell(50,0)
 a.iterate(200,True,40)
 """
